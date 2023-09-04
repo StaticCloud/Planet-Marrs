@@ -1,3 +1,9 @@
+:root {
+  --primary: #FF3355;
+  --secondary: #000000;
+  --ternary: #FFFFFF;
+}
+
 * {
   margin: 0;
   padding: 0;
