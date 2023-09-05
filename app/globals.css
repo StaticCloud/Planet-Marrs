@@ -9,3 +9,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+h1 {
+  color: var(--primary)
+}
+
+p {
+  color: var(--ternary)
+}
+
+body {
+  background-color: var(--secondary);
+}
+
+main {
+  display: block;
+}
