@@ -1,39 +1,46 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+import styles from './styles/FeaturesSection.module.css'
+
+// import actual images
+import fastAndSimple from '@/public/images/speedometer.png';
+import responsive from '@/public/images/resolution.png';
+import customizable from '@/public/images/customization.png';
+import seoFriendly from '@/public/images/search.png'
 
 type CardInfo = {
     title: string,
     text: string,
-    image: string
+    image: StaticImageData
 }
 
 const features: CardInfo[] = [
     {
         title: "Fast and Simple",
-        text: "Websites are programmed and optimized with performance at the forefront, ensuring fast websites without the bloat that comes with traditional website builders.",
-        image: ""
+        text: "Websites are built and optimized with performance at the forefront, ensuring fast websites without the bloat that comes with traditional website builders.",
+        image: fastAndSimple
     },
     {
         title: "Responsive",
         text: "Websites are optimized for a wide variety of screen sizes, ensuring that your website will look great on any device.",
-        image: ""
+        image: responsive
     },
     {
-        title: "Creative Freedom",
+        title: "Customizable",
         text: "Customers have the final say on the look of their website, no more spending hours searching for the perfect template.",
-        image: ""
+        image: customizable
     },
     {
         title: "SEO Friendly",
         text: "We leverage best SEO practices and optimizations such as server-side rendering, giving your website a much stronger site ranking on search engines.",
-        image: ""
+        image: seoFriendly
     }
 ]
 
 
 function Card({ title, text, image }: CardInfo) {
     return (
-        <div>
-            <Image src={image} alt={title}/>
+        <div className={styles.featureCard}>
+            <Image src={image} alt={title} width={'150'} height={'150'}/>
             <h1>{title}</h1>
             <p>{text}</p>
         </div>
@@ -42,8 +49,7 @@ function Card({ title, text, image }: CardInfo) {
 
 export default function FeaturesSection() {
     return (
-        <section>
-            <h1>This is where features will go</h1>
+        <section className={styles.featureSection}>
             {features.map(feature => Card({ title: feature.title, text: feature.text, image: feature.image }))}
         </section>
     )
