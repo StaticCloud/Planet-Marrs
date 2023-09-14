@@ -40,7 +40,7 @@ const features: CardInfo[] = [
 function Card({ title, text, image }: CardInfo) {
     return (
         <div className={styles.featureCard}>
-            <Image src={image} alt={title} width={'150'} height={'150'}/>
+            <Image src={image} alt={title} width={'170'} height={'170'}/>
             <h1>{title}</h1>
             <p>{text}</p>
         </div>

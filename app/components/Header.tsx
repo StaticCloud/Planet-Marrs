@@ -1,11 +1,11 @@
 "use client"
 
 import { archivo } from "../fonts";
-import Link from "next/link";
+import styles from "./styles/Header.module.css";
 
 export default function Header() {
     return (
-        <header className={archivo.className}>
+        <header className={`${archivo.className} ${styles.header}`}>
             <h1>Planet Marrs</h1>
         </header>
     );
