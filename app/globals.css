@@ -16,9 +16,23 @@ h1 {
   color: var(--primary)
 }
 
+h2 {
+  margin-bottom: 1rem;
+  color: var(--primary)
+}
+
 p {
   color: var(--ternary);
   line-height: 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  color: var(--ternary);
+  margin: 20px 0;
 }
 
 body {

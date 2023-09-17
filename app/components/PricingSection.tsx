@@ -4,7 +4,7 @@ type CardInfo = {
     tier: string,
     description: string,
     price: string,
-    features: [string]
+    features: string[]
 }
 
 const pricingOptions: CardInfo[] = [
@@ -13,7 +13,11 @@ const pricingOptions: CardInfo[] = [
         description: "A monthly subscription that covers unlimited services.",
         price: "$120/month",
         features: [
-            "Feature placeholder"
+            "A Professional Website",
+            "Unlimited Edits",
+            "Unlimited Maintenance",
+            "1:1 Support",
+            "Hosting Management"
         ]
     },
     {
@@ -21,7 +25,10 @@ const pricingOptions: CardInfo[] = [
         description: "Pay a flat, one time fee for your website.",
         price: "$1900",
         features: [
-            "Optional $30/month for hosting management and maintenance."
+            "A Professional Website",
+            "No Mandatory Monthly Fees",
+            "Access to Source Code",
+            "Optional Monthly $30 for Hosting Management and Maintenance"
         ]
     }
 ]
@@ -30,7 +37,11 @@ function PricingCard({ tier, description, price, features }: CardInfo) {
     return (
         <div className={style.pricingCard}>
             <h1>{tier}</h1>
+            <h2>{price}</h2>
             <p>{description}</p>
+            <ul>
+                {features.map((feature, i) => <li key={i}>{feature}</li>)}
+            </ul>
         </div>
     )
 }

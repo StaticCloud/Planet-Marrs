@@ -1,3 +1,9 @@
 .pricingCard {
-    
+    width: 300px;
+    padding: 15px;
+}
+
+.pricingCard ul {
+    border-top: 1px var(--ternary) solid;
+    margin: 20px 0;
 }
