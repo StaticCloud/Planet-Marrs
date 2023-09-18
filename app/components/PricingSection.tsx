@@ -48,8 +48,11 @@ function PricingCard({ tier, description, price, features }: CardInfo) {
 
 export default function PricingSection() {
     return (
-        <section>
-            {pricingOptions.map(option => PricingCard({ tier: option.tier, description: option.description, price: option.price, features: option.features }))}
+        <section className={style.pricingSection}>
+            <h1 className='sectionTitle'>Pricing</h1>
+            <div className={style.pricingCardWrapper}>
+                {pricingOptions.map(option => PricingCard({ tier: option.tier, description: option.description, price: option.price, features: option.features }))}
+            </div>
         </section>
     )
 }

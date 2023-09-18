@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from "next/image";
-import styles from './styles/FeaturesSection.module.css'
+import style from './styles/FeaturesSection.module.css'
 
 // import actual images
 import fastAndSimple from '@/public/images/speedometer.png';
@@ -39,17 +39,20 @@ const features: CardInfo[] = [
 
 function Card({ title, text, image }: CardInfo) {
     return (
-        <div className={styles.featureCard}>
-            <Image src={image} alt={title} width={'170'} height={'170'}/>
-            <h1>{title}</h1>
-            <p>{text}</p>
+        <div className={style.featureCard}>
+            <Image src={image} alt={title} width={'270'} height={'270'}/>
+            <div className={style.titleAndTextWrap}>
+                <h1>{title}</h1>
+                <p>{text}</p>
+            </div>
         </div>
     );
 }
 
 export default function FeaturesSection() {
     return (
-        <section className={styles.featureSection}>
+        <section className={style.featureSection}>
+            <h1 className="sectionTitle">What We Offer</h1>
             {features.map(feature => Card({ title: feature.title, text: feature.text, image: feature.image }))}
         </section>
     )

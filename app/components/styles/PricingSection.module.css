@@ -1,3 +1,14 @@
+.pricingCardWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.pricingSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .pricingCard {
     width: 300px;
     padding: 15px;
