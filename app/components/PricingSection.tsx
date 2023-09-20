@@ -1,4 +1,6 @@
 import style from './styles/PricingSection.module.css';
+import Image from 'next/image';
+import checkmark from '@/public/images/checkmark.png';
 
 type CardInfo = {
     tier: string,
@@ -28,7 +30,7 @@ const pricingOptions: CardInfo[] = [
             "A Professional Website",
             "No Mandatory Monthly Fees",
             "Access to Source Code",
-            "Optional Monthly $30 for Hosting Management and Maintenance"
+            "Optional Monthly $30 Fee for Hosting Management and Maintenance"
         ]
     }
 ]
@@ -40,7 +42,12 @@ function PricingCard({ tier, description, price, features }: CardInfo) {
             <h2>{price}</h2>
             <p>{description}</p>
             <ul>
-                {features.map((feature, i) => <li key={i}>{feature}</li>)}
+                {features.map((feature, i) =>
+                    <li key={i} className={style.pricingFeature}>
+                        <Image src={checkmark} width={'20'} height={'20'} alt={'checkmark'}/>
+                        <p>{feature}</p>
+                    </li>
+                )}
             </ul>
         </div>
     )

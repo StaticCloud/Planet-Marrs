@@ -1,5 +1,6 @@
 .pricingCardWrapper {
     display: flex;
+    margin: 4rem 0;
     justify-content: center;
 }
 
@@ -11,10 +12,19 @@
 
 .pricingCard {
     width: 300px;
-    padding: 15px;
+    margin: 0 4rem;
 }
 
 .pricingCard ul {
     border-top: 1px var(--ternary) solid;
     margin: 20px 0;
+}
+
+.pricingFeature {
+    display: flex;
+    align-items: center;
+}
+
+.pricingFeature img {
+    margin-right: 15px;
 }
