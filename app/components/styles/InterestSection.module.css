@@ -1,0 +1,9 @@
+.interestSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.interestSection p {
+    max-width: 600px;
+}

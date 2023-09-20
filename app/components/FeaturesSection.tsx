@@ -51,7 +51,7 @@ function Card({ title, text, image }: CardInfo) {
 
 export default function FeaturesSection() {
     return (
-        <section className={style.featureSection}>
+        <section className={style.featureSection} id="features">
             <h1 className="sectionTitle">What We Offer</h1>
             {features.map(feature => Card({ title: feature.title, text: feature.text, image: feature.image }))}
         </section>
