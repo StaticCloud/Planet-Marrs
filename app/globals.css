@@ -53,3 +53,30 @@ main {
   padding-bottom: 1rem;
   border-bottom: 2px var(--ternary) solid;
 }
+
+.button {
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  color: var(--ternary);
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 3px solid var(--primary);
+  position: relative;
+}
+
+.button:before {
+  content: '';
+  width: 0%;
+  height: 100%;
+  background-color: var(--primary);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+  transition: .2s all;
+}
+
+.button:hover:before {
+  width: 100%;
+}

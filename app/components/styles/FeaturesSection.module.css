@@ -11,6 +11,7 @@
 }
 
 .featureSection {
+    padding-top: 60px;
     display: inline-flex;
     align-items: center;
     flex-direction: column;

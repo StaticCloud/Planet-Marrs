@@ -1,9 +1,12 @@
 .interestSection {
+    padding-top: 60px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.interestSection p {
+.interestContent {
     max-width: 600px;
+    text-align: center;
+    margin: 4rem 0;
 }
