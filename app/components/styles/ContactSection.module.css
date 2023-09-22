@@ -1,0 +1,24 @@
+.contactSection {
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contactSection p {
+    margin-top: 2rem;
+}
+
+.contactSection a {
+    margin-bottom: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2rem;
+    color: var(--primary);
+    transition: .2s all;
+}
+
+.contactSection a:hover {
+    color: var(--ternary);
+}

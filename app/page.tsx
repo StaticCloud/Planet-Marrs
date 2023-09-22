@@ -2,6 +2,7 @@ import LandingSection from "./components/LandingSection"
 import FeaturesSection from "./components/FeaturesSection"
 import PricingSection from "./components/PricingSection"
 import InterestSection from "./components/InterestSection"
+import ContactSection from "./components/ContactSection"
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <FeaturesSection/>
         <PricingSection/>
         <InterestSection/>
+        <ContactSection/>
       </>
   )
 }
