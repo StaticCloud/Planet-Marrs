@@ -10,42 +10,32 @@
     margin: 1rem;
     width: 600px;
     height: 500px;
+    display: flex;
     position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.landingSites img {
-    max-width: 100%;
-    height: auto;
-    position: absolute;
-    object-fit: contain;
+.landingSites a {
+    display: flex;
+    height: 100%;
+    width: 100%;
     scale: 0.8;
     rotate: 0.8 -1 0 25deg;
     transition: .2s all;
-    z-index: 0;
 }
 
-.landingSites img:hover {
-    cursor: pointer;
+.landingSites img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.landingSites a:hover {
     transform: translateY(-40px);
     rotate: 0 0 0 0deg;
-}
-
-.landingSites img:nth-child(1)  {
-    top: 0;
-    right: -50px;
-    
-}
-
-.landingSites img:nth-child(2)  {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-.landingSites img:nth-child(3)  {
-    bottom: 0;
-    left: -50px;
 }
 
 .landingText {

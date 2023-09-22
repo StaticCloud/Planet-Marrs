@@ -1,5 +1,6 @@
 import styles from "./styles/LandingSection.module.css"
 import Image from "next/image";
+import Link from "next/link";
 
 import SiteOne from '@/public/images/site-one.png'
 import SiteTwo from '@/public/images/site-two.png'
@@ -13,9 +14,15 @@ export default function LandingSection() {
                 <p>Planet Marrs provides customers with websites that are coded from the ground up, responsive, and free from the frustration, visual limitations, or bloat of website builders.</p>
             </div>
             <div className={styles.landingSites}>
-                <Image src={SiteOne} alt="sample-site-one"/>
-                <Image src={SiteTwo} alt="sample-site-two"/>
-                <Image src={SiteThree} alt="sample-site-three"/>
+                <Link href="https://diegomarrs.dev/" target="_blank">
+                    <Image src={SiteOne} alt="sample-site-one"/>
+                </Link>
+                <Link href="https://flourishing-zabaione-245636.netlify.app/" target="_blank">
+                    <Image src={SiteTwo} alt="sample-site-two"/>
+                </Link>
+                <Link href="https://deluxe-clafoutis-2cf5ec.netlify.app/" target="_blank">
+                    <Image src={SiteThree} alt="sample-site-three"/>
+                </Link>
             </div>
         </section>
     )
