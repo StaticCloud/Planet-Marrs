@@ -1,5 +1,4 @@
 import style from './styles/ContactSection.module.css';
-import Link from 'next/link';
 
 export default function ContactSection() {
     return (

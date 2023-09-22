@@ -11,31 +11,35 @@
     width: 600px;
     height: 500px;
     display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .landingSites a {
-    display: flex;
-    height: 100%;
+    position: absolute;
     width: 100%;
+    display: block;
     scale: 0.8;
-    rotate: 0.8 -1 0 25deg;
+    rotate: 0.8 -0.8 0 25deg;
     transition: .2s all;
 }
 
-.landingSites img {
-    height: auto;
-    width: 100%;
-    object-fit: contain;
+.landingSites a:nth-child(1) {
+    transform: translateX(10%) translateY(-25%);
 }
 
+.landingSites a:nth-child(3) {
+    transform: translateY(25%) translateX(-10%);
+}
 
 .landingSites a:hover {
-    transform: translateY(-40px);
     rotate: 0 0 0 0deg;
+}
+
+.landingSites a img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 .landingText {
