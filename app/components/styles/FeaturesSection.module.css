@@ -1,13 +1,15 @@
 .titleAndTextWrap {
-    margin-left: 20px;
+    text-align: center;
+    margin-left: 0;
 }
 
 .featureCard {
     display: flex;
     max-width: 900px;
-    margin: 4rem 0;
+    margin: 4rem;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .featureSection {
@@ -16,4 +18,16 @@
     align-items: center;
     flex-direction: column;
     width: 100svw;
+}
+
+@media screen and (min-width: 900px) {
+    .titleAndTextWrap {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .featureCard {
+        margin: 4rem 0;
+        flex-direction: row;
+    }
 }

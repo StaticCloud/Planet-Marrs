@@ -1,7 +1,7 @@
 .pricingCardWrapper {
     display: flex;
     margin: 4rem 0;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .pricingSection {
@@ -13,7 +13,7 @@
 
 .pricingCard {
     width: 300px;
-    margin: 0 4rem;
+    margin: 2rem 0;
 }
 
 .pricingCard ul {
@@ -28,4 +28,14 @@
 
 .pricingFeature img {
     margin-right: 15px;
+}
+
+@media screen and (min-width: 900px) {
+    .pricingCardWrapper {
+        flex-direction: row;
+    }
+
+    .pricingCard {
+        margin: 0 4rem;
+    }
 }

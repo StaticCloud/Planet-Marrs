@@ -10,7 +10,8 @@ import seoFriendly from '@/public/images/search.png'
 type CardInfo = {
     title: string,
     text: string,
-    image: StaticImageData
+    image: StaticImageData,
+    key?: number 
 }
 
 const features: CardInfo[] = [
@@ -37,9 +38,9 @@ const features: CardInfo[] = [
 ]
 
 
-function Card({ title, text, image }: CardInfo) {
+function Card({ title, text, image, key }: CardInfo) {
     return (
-        <div className={style.featureCard}>
+        <div className={style.featureCard} key={key}>
             <Image src={image} alt={title} width={'270'} height={'270'}/>
             <div className={style.titleAndTextWrap}>
                 <h1>{title}</h1>
@@ -53,7 +54,7 @@ export default function FeaturesSection() {
     return (
         <section className={style.featureSection} id="features">
             <h1 className="sectionTitle">What We Offer</h1>
-            {features.map(feature => Card({ title: feature.title, text: feature.text, image: feature.image }))}
+            {features.map((feature, i) => Card({ title: feature.title, text: feature.text, image: feature.image, key: i }))}
         </section>
     )
 }
