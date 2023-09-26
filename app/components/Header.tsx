@@ -10,7 +10,7 @@ export default function Header() {
     return (
         <header className={`${archivo.className} ${styles.header}`}>
             <Image src={Logo} width={'60'} height={'60'} alt="logo"/>
-            <ul>
+            <ul className={styles.desktopNav}>
                 <li>
                     <Link href="#landing">HOME</Link>
                 </li>

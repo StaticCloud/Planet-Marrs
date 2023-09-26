@@ -9,8 +9,8 @@
     z-index: 1000;
 }
 
-.header ul {
-    display: flex;
+.desktopNav {
+    display: none;
 }
 
 .header a,
@@ -39,4 +39,10 @@
 
 .header a:not(:hover):before {
     right: 0%;
+}
+
+@media screen and (min-width: 900px) {
+    .desktopNav {
+        display: flex;
+    }
 }
