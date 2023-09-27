@@ -1,12 +1,14 @@
 "use client"
 
 import { archivo } from "../fonts";
+import HamburgerMenu from './HamburgerMenu';
 import Logo from '@/public/images/logo.png';
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./styles/Header.module.css";
+import { FC } from "react";
 
-export default function Header() {
+const Header:FC = () => {
     return (
         <header className={`${archivo.className} ${styles.header}`}>
             <Image src={Logo} width={'60'} height={'60'} alt="logo"/>
@@ -21,6 +23,9 @@ export default function Header() {
                     <Link href="#pricing">PRICING</Link>
                 </li>
             </ul>
+            <HamburgerMenu/>
         </header>
     );
 }
+
+export default Header;

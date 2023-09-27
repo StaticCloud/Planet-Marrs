@@ -1,0 +1,44 @@
+.hamburgerMenu {
+    display: flex;
+}
+
+.hamburgerButton {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border: none;
+    padding: 15px;
+    background-color: var(--secondary);
+}
+
+.hamburgerIcon {
+    width: 100%;
+    height: 2px;
+    position: relative;
+    background-color: var(--primary);
+}
+
+.hamburgerIcon:before,
+.hamburgerIcon:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    background-color: var(--primary);
+}
+
+.hamburgerIcon:before {
+    top: -10px;
+}
+
+.hamburgerIcon:after {
+    top: 10px;
+}
+
+@media screen and (min-width: 900px) {
+    .hamburgerMenu {
+        display: none;
+    }
+}
