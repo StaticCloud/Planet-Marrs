@@ -22,13 +22,13 @@ const HamburgerMenu: FC = () => {
                     ${visible ? styles.mobileMenuActive : styles.mobileMenu}
                 `} onClick={() => ToggleMobileMenu()}>
                 <li>
-                    <Link href="#landing">HOME</Link>
+                    <Link href="#landing" scroll={true}>HOME</Link>
                 </li>
                 <li>
-                    <Link href="#features">FEATURES</Link>
+                    <Link href="#features" scroll={true}>FEATURES</Link>
                 </li>
                 <li>
-                    <Link href="#pricing">PRICING</Link>
+                    <Link href="#pricing" scroll={true}>PRICING</Link>
                 </li>
             </ul>
         </nav>
