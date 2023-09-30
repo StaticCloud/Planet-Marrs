@@ -28,7 +28,7 @@ const HamburgerMenu: FC = () => {
                     <a href="#features">FEATURES</a>
                 </li>
                 <li>
-                    <Link href="#pricing">PRICING</Link>
+                    <a href="#pricing">PRICING</a>
                 </li>
             </ul>
         </nav>
