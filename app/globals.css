@@ -15,7 +15,7 @@ html {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   color: var(--primary)
 }
@@ -26,7 +26,7 @@ h2 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--ternary);
   line-height: 1.5rem;
 }
@@ -49,7 +49,7 @@ main {
 }
 
 .sectionTitle {
-  font-size: 3rem;
+  font-size: 2rem;
   padding-bottom: 1rem;
   border-bottom: 2px var(--ternary) solid;
 }
@@ -79,4 +79,22 @@ main {
 
 .button:hover:before {
   width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
+
+  .sectionTitle {
+    font-size: 3rem;
+  }
 }

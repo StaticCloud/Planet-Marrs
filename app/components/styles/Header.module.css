@@ -15,7 +15,6 @@
 
 .header a,
 .header a:visited {
-    margin-right: 1rem;
     font-weight: bold;
     color: var(--primary);
     text-decoration: none;
@@ -29,7 +28,9 @@
     }
 
 
-    .header a {
+    .header a,
+    .header a:visited {
+        margin-right: 1rem;
         font-size: 1rem;
     }
 
