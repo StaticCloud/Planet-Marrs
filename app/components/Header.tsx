@@ -14,13 +14,13 @@ const Header:FC = () => {
             <Image src={Logo} width={'60'} height={'60'} alt="logo"/>
             <ul className={styles.desktopNav}>
                 <li>
-                    <Link href="#landing">HOME</Link>
+                    <a href="#landing">HOME</a>
                 </li>
                 <li>
-                    <Link href="#features">FEATURES</Link>
+                    <a href="#features">FEATURES</a>
                 </li>
                 <li>
-                    <Link href="#pricing">PRICING</Link>
+                    <a href="#pricing">PRICING</a>
                 </li>
             </ul>
             <HamburgerMenu/>

@@ -67,6 +67,29 @@
     transform: rotate(45deg) translateX(-5px) translateY(-5px);;
 }
 
+.mobileMenu,
+.mobileMenuActive {
+    position: fixed;
+    left: 0;
+    width: 100svw;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    background-color: var(--secondary);
+    transition: 0.5s all;
+}
+
+.mobileMenu {
+    top: -100svh;
+}
+
+.mobileMenuActive {
+    top: 0;
+}
+
 @media screen and (min-width: 900px) {
     .hamburgerMenu {
         display: none;

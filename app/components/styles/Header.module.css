@@ -15,34 +15,41 @@
 
 .header a,
 .header a:visited {
-    margin-right: 1rem;
     font-weight: bold;
     color: var(--primary);
     text-decoration: none;
     position: relative;
-}
-
-.header a:before {
-    position: absolute;
-    content: '';
-    display: inline-block;
-    width: 0%;
-    height: 2px;
-    bottom: -3px;
-    background-color: var(--ternary);
-    transition: .2s all;
-}
-
-.header a:hover:before {
-    width: 100%;
-}
-
-.header a:not(:hover):before {
-    right: 0%;
+    font-size: 2rem;
 }
 
 @media screen and (min-width: 900px) {
     .desktopNav {
         display: flex;
+    }
+
+
+    .header a,
+    .header a:visited {
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
+
+    .header a:before {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        width: 0%;
+        height: 2px;
+        bottom: -3px;
+        background-color: var(--ternary);
+        transition: .2s all;
+    }
+    
+    .header a:hover:before {
+        width: 100%;
+    }
+    
+    .header a:not(:hover):before {
+        right: 0%;
     }
 }

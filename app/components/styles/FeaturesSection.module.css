@@ -20,6 +20,15 @@
     width: 100svw;
 }
 
+.featureSection img {
+    width: 200px;
+    height: 200px;
+}
+
+.featureSection p {
+    max-width: 320px;
+}
+
 @media screen and (min-width: 900px) {
     .titleAndTextWrap {
         text-align: left;
@@ -29,5 +38,14 @@
     .featureCard {
         margin: 4rem 0;
         flex-direction: row;
+    }
+
+    .featureSection img {
+        width: 270px;
+        height: 270px;
+    }
+
+    .featureSection p {
+        max-width: none;
     }
 }
