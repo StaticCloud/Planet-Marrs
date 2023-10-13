@@ -4,6 +4,7 @@ import FeaturesSection from "./components/FeaturesSection"
 import PricingSection from "./components/PricingSection"
 import InterestSection from "./components/InterestSection"
 import ContactSection from "./components/ContactSection"
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Planet Marrs",
@@ -18,6 +19,7 @@ export default function Home() {
         <PricingSection/>
         <InterestSection/>
         <ContactSection/>
+        <Footer/>
       </>
   )
 }
